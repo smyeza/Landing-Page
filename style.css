@@ -6,6 +6,7 @@
 
 #container{
     width: 100%;
+    min-height: 100%;
 }
 
 #header{
@@ -13,8 +14,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 10px;
-    height: 100px;
+    width: 100%;
+    height: 50px;
     background: #abcd;
+    position: fixed;
+    margin-bottom: 30px;
+    top: 0;
+    
 
 }
 
@@ -40,40 +46,88 @@
     text-decoration: none;
 }
 
-#product p{
+#product {
     line-height: 1.4;
+    min-height: 400px;
+    margin-top: 100px;
+    
+    
+    
 }
 
 .phones{
     display: flex;
     flex-direction: row;
+    min-height: 400px;
+    /* width: 600px; */
+    align-items: strech;
+    justify-content: space-between;
     
 }
 
-.photos1{
-    background-image: url(images/phone1.jpg);
-    width: 300px;
+.photos{
     height: 400px;
-    flex: 1;
+    width: 400px;
 }
 
-.photos2{
-    background-image: url(images/phone2.jpg);
+.clsImg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#specifications{
+    width: 100%;
+    min-height: 300px;
+    background: #edc;
+    margin-top: 200px;
+    text-align: center;
+    margin: 30px 30px 30px 0;
+    
+}
+
+#prices{
+    display: flex;
+    min-height: 500px;
+    width: 100%;
+    background: #bca;
+    margin: 20px 0;
+   flex-direction: row;
+   justify-content: space-between;
+   
+}
+
+.phone1{
+    height: 200px;
     width: 200px;
-    height: 300px;
-    flex: 1;
+    border: 2px solid red;
+    text-align: center;
 }
 
-.photos3{
-    background-image: url(images/phone3.webp);
-    width: 300px;
-    height: 400px;
-    flex: 1;
+.phone1 a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: red;
+    width: 70%;
+
+
 }
 
 
 
 
+#footer{
+    height: 100px;
+    width: 100%;
+    background: #abcd;
+    
+    
+}
+
+.inner-footer{
+    text-align: center;
+    margin-top: 10px;
+}
 
 
 
